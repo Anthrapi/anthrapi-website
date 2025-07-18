@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://anthrapi.com
+
+# Sitemaps
+Sitemap: https://anthrapi.com/sitemap.xml

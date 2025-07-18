@@ -1,0 +1,14 @@
+# Anthrapi
+
+> Anthrapi is dedicated to building legacies through innovative branding solutions. This site provides information about our services, philosophy, and contact details.
+
+Anthrapi specializes in creating enduring brands for businesses and individuals. We focus on legacy-building, creative strategy, and digital presence.
+
+## Docs
+
+- [Home Page](https://anthrapi.com/): Main landing page with our mission and contact info
+
+## Optional
+
+- [Sitemap](https://anthrapi.com/sitemap.xml): List of all indexable pages for search engines and LLMs
+- [robots.txt](https://anthrapi.com/robots.txt): Crawling policy for bots and LLMs 

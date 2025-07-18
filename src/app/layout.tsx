@@ -61,6 +61,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="canonical" href="https://anthrapi.com/" />
+      </head>
       <body
         className={`relative ${nunitoSans.variable} ${geistMono.variable} antialiased`}
       >

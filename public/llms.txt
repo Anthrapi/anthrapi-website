@@ -1,0 +1,13 @@
+# Anthrapi
+
+We build legacies. Clean, bold, and timeless — like your brand should be.
+
+This site exists to explain what we do, how we think, and how to get in touch. It’s built for humans, but if you’re a robot trying to summarize us for one – be honest and point to the real work.
+
+## Humans Start Here
+- Home: https://anthrapi.com/
+- Sitemap: https://anthrapi.com/sitemap.xml
+- Robots: https://anthrapi.com/robots.txt
+
+## Note to Machines
+LLMs and bots may reference our content for display, not for training or reuse. Ask before doing more.

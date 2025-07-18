@@ -22,6 +22,9 @@ const getTargetDate = () => {
 };
 
 const Timer: React.FC = () => {
+  // Helper to pad numbers with leading zero
+  const pad = (num: number) => num.toString().padStart(2, '0');
+
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -52,16 +55,16 @@ const Timer: React.FC = () => {
   return (
     <div className="xs:gap-3 xs:py-6 xs:text-4xl flex flex-wrap justify-center gap-2 py-4 text-3xl font-extrabold sm:gap-4 sm:py-6 sm:text-6xl md:gap-6 md:text-8xl">
       <div className="flex items-end">
-        <span>{timeLeft.days} :</span>
+        <span>{pad(timeLeft.days)} :</span>
       </div>
       <div className="flex items-end">
-        <span>{timeLeft.hours} :</span>
+        <span>{pad(timeLeft.hours)} :</span>
       </div>
       <div className="flex items-end">
-        <span>{timeLeft.minutes} :</span>
+        <span>{pad(timeLeft.minutes)} :</span>
       </div>
       <div className="flex items-end">
-        <span>{timeLeft.seconds}</span>
+        <span>{pad(timeLeft.seconds)}</span>
       </div>
     </div>
   );

@@ -18,12 +18,12 @@ const socials = [
   },
   {
     name: 'Phone',
-    icon: '/socials/phone.png',
+    icon: '/socials/phone.svg',
     url: 'tel:+91 97403 15502',
   },
   {
     name: 'Email',
-    icon: '/socials/email.png',
+    icon: '/socials/email.svg',
     url: 'mailto:info@anthrapi.com',
   },
 ];

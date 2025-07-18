@@ -65,10 +65,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${nunitoSans.variable} ${geistMono.variable} antialiased`}
+        className={`relative ${nunitoSans.variable} ${geistMono.variable} antialiased`}
       >
         <Background />
-        {children}
+        <div className="relative z-10">{children}</div>
       </body>
     </html>
   );

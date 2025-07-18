@@ -4,17 +4,27 @@ const socials = [
   {
     name: 'Instagram',
     icon: '/socials/instagram.svg',
-    url: 'https://instagram.com/',
+    url: 'https://www.instagram.com/anthrapi.ltd/',
   },
   {
     name: 'LinkedIn',
     icon: '/socials/linkedin.svg',
-    url: 'https://linkedin.com/',
+    url: 'https://www.linkedin.com/company/anthrapi/',
   },
   {
     name: 'Twitter',
     icon: '/socials/twitter.svg',
-    url: 'https://twitter.com/',
+    url: 'https://x.com/anthrapi',
+  },
+  {
+    name: 'Phone',
+    icon: '/socials/phone.png',
+    url: 'tel:+91 97403 15502',
+  },
+  {
+    name: 'Email',
+    icon: '/socials/email.png',
+    url: 'mailto:info@anthrapi.com',
   },
 ];
 

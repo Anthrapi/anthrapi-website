@@ -37,27 +37,6 @@ export default function Home() {
         <div className="text-lg font-bold sm:text-xl md:text-2xl">
           Stay Tuned
         </div>
-        {/* Contact Section in Footer */}
-        <div className="flex flex-col items-center gap-1 text-base sm:text-lg md:text-xl">
-          <div>
-            <span className="font-semibold">Phone:</span>{' '}
-            <a
-              href="tel:+919740315502"
-              className="underline hover:text-blue-600"
-            >
-              +91 97403 15502
-            </a>
-          </div>
-          <div>
-            <span className="font-semibold">Email:</span>{' '}
-            <a
-              href="mailto:info@anthrapi.com"
-              className="underline hover:text-blue-600"
-            >
-              info@anthrapi.com
-            </a>
-          </div>
-        </div>
         <Socials />
       </footer>
     </div>

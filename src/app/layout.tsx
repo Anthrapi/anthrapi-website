@@ -1,23 +1,8 @@
 import type { Metadata } from 'next';
-// import { Geist, Geist_Mono } from "next/font/google";
-import {
-  Bricolage_Grotesque,
-  Gochi_Hand,
-  Nunito_Sans,
-  Manrope,
-  Geist,
-  Geist_Mono,
-} from 'next/font/google';
+import { Nunito_Sans, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Background from '@/components/Background';
-
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin', 'latin-ext'],
-  weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
-  display: 'swap',
-});
 
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
@@ -33,28 +18,40 @@ const nunitoSans = Nunito_Sans({
   weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
-const bricolageGrotesque = Bricolage_Grotesque({
-  subsets: ['latin'],
-  variable: '--font-bricolage',
-  display: 'swap',
-});
-
-const gochiHand = Gochi_Hand({
-  subsets: ['latin'],
-  weight: '400',
-  variable: '--font-gochi',
-  display: 'swap',
-});
-
-const manrope = Manrope({
-  subsets: ['latin'],
-  variable: '--font-manrope',
-  display: 'swap',
-});
-
 export const metadata: Metadata = {
   title: 'Anthrapi - Creating Legacies',
   description: "We don't just create brands; we build legacies",
+  metadataBase: new URL('https://anthrapi.com'),
+  openGraph: {
+    title: 'Anthrapi - Creating Legacies',
+    description: "We don't just create brands; we build legacies",
+    url: 'https://anthrapi.com',
+    siteName: 'Anthrapi',
+    images: [
+      {
+        url: '/logo.webp',
+        width: 512,
+        height: 512,
+        alt: 'Anthrapi Logo',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Anthrapi - Creating Legacies',
+    description: "We don't just create brands; we build legacies",
+    site: '@anthrapi',
+    creator: '@anthrapi',
+    images: ['/logo.webp'],
+  },
+  icons: {
+    icon: '/favicon.ico',
+  },
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function RootLayout({

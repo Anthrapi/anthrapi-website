@@ -53,18 +53,30 @@ const Timer: React.FC = () => {
   }, []);
 
   return (
-    <div className="xs:gap-3 xs:py-6 xs:text-4xl flex flex-wrap justify-center gap-2 py-4 text-3xl font-extrabold sm:gap-4 sm:py-6 sm:text-6xl md:gap-6 md:text-8xl">
+    <div
+      className="xs:gap-3 xs:py-6 xs:text-4xl flex flex-wrap justify-center gap-2 py-4 text-3xl font-extrabold sm:gap-4 sm:py-6 sm:text-6xl md:gap-6 md:text-8xl"
+      role="timer"
+      aria-label={`Countdown: ${pad(timeLeft.days)} days, ${pad(timeLeft.hours)} hours, ${pad(timeLeft.minutes)} minutes, ${pad(timeLeft.seconds)} seconds`}
+    >
       <div className="flex items-end">
-        <span>{pad(timeLeft.days)} :</span>
+        <time dateTime={pad(timeLeft.days)} aria-label="Days">
+          {pad(timeLeft.days)} :
+        </time>
       </div>
       <div className="flex items-end">
-        <span>{pad(timeLeft.hours)} :</span>
+        <time dateTime={pad(timeLeft.hours)} aria-label="Hours">
+          {pad(timeLeft.hours)} :
+        </time>
       </div>
       <div className="flex items-end">
-        <span>{pad(timeLeft.minutes)} :</span>
+        <time dateTime={pad(timeLeft.minutes)} aria-label="Minutes">
+          {pad(timeLeft.minutes)} :
+        </time>
       </div>
       <div className="flex items-end">
-        <span>{pad(timeLeft.seconds)}</span>
+        <time dateTime={pad(timeLeft.seconds)} aria-label="Seconds">
+          {pad(timeLeft.seconds)}
+        </time>
       </div>
     </div>
   );

@@ -30,24 +30,27 @@ const socials = [
 
 const Socials = () => {
   return (
-    <div className="flex items-center gap-4">
-      {socials.map((social) => (
-        <a
-          key={social.name}
-          href={social.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          title={social.name}
-          className="transition-transform hover:scale-110"
-        >
-          <img
-            src={social.icon}
-            alt={social.name}
-            className="block h-8 w-8 rounded-full bg-white"
-          />
-        </a>
-      ))}
-    </div>
+    <nav className="flex items-center gap-4" aria-label="Social media">
+      <ul className="flex items-center gap-4">
+        {socials.map((social) => (
+          <li key={social.name}>
+            <a
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={social.name}
+              className="transition-transform hover:scale-110"
+            >
+              <img
+                src={social.icon}
+                alt={social.name}
+                className="block h-8 w-8 rounded-full bg-white"
+              />
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 };
 

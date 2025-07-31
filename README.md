@@ -29,6 +29,39 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Sitemap Generation
+
+This project uses [next-sitemap](https://github.com/iamvishnusankar/next-sitemap) to automatically generate sitemaps and robots.txt files.
+
+### Automatic Generation
+
+The sitemap is automatically generated after each build using the `postbuild` script.
+
+### Manual Generation
+
+To manually generate the sitemap, run:
+
+```bash
+npm run sitemap
+```
+
+### Configuration
+
+The sitemap configuration is in `next-sitemap.config.js`. You can customize:
+
+- Site URL
+- Excluded pages
+- Robots.txt policies
+- Additional sitemap entries
+
+### Environment Variables
+
+Set the `SITE_URL` environment variable in your `.env.local` file:
+
+```
+SITE_URL=https://yourdomain.com
+```
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.

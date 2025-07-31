@@ -1,0 +1,90 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
+export default function Who() {
+  return (
+    <div className="relative container mx-auto flex min-h-screen items-center justify-center">
+      {/* Background gradient and pattern will be handled by existing background components */}
+
+      <div className="gap:8 flex min-h-screen w-full flex-col px-4 py-8 md:gap-16 lg:px-0">
+        {/* Top Section */}
+        <div className="space-y-4 text-center lg:text-left">
+          <div className="font-serif text-lg font-medium">Who?</div>
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-7xl">
+            Your Business’s Dream Ally
+          </h1>
+          <p className="max-w-5xl text-sm font-medium italic sm:text-lg md:text-xl">
+            For Some Creative, For Some Technical, For all Problem Solvers
+          </p>
+        </div>
+
+        {/* Middle Section */}
+        <div className="relative flex flex-col items-center justify-between gap-8 py-12 lg:flex-row">
+          <div className="relative inline-flex max-w-fit flex-col gap-4">
+            <Image
+              src="/services/Creative Services.png"
+              alt="Creative Services"
+              width={400}
+              height={400}
+              className=""
+            />
+            <Link
+              href="/men-at-work"
+              className="absolute right-2 bottom-2 z-10 flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium hover:bg-amber-50"
+            >
+              Know More
+              <Image
+                src="/icons/share.png"
+                alt="arrow-right"
+                width={12}
+                height={12}
+              />
+            </Link>
+          </div>
+          <div className="relative inline-flex max-w-fit flex-col gap-4">
+            <Image
+              src="/services/Software Solutions.png"
+              alt="Software Solutions"
+              width={400}
+              height={400}
+              className=""
+            />
+            <Link
+              href="/men-at-work"
+              className="absolute right-2 bottom-2 z-10 flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium hover:bg-amber-50"
+            >
+              Know More
+              <Image
+                src="/icons/share.png"
+                alt="arrow-right"
+                width={12}
+                height={12}
+              />
+            </Link>
+          </div>
+          <div className="relative inline-flex max-w-fit flex-col flex-wrap gap-4">
+            <Image
+              src="/services/AI+.png"
+              alt="AI+"
+              width={400}
+              height={400}
+              className=""
+            />
+            <Link
+              href="/men-at-work"
+              className="absolute right-2 bottom-2 z-10 flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium hover:bg-amber-50"
+            >
+              Know More
+              <Image
+                src="/icons/share.png"
+                alt="arrow-right"
+                width={12}
+                height={12}
+              />
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

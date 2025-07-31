@@ -1,22 +1,6 @@
 import type { Metadata } from 'next';
-import { Nunito_Sans, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import Navbar from '@/components/Navbar';
-import Background from '@/components/Background';
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin', 'latin-ext'],
-  weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
-  display: 'swap',
-});
-
-const nunitoSans = Nunito_Sans({
-  subsets: ['latin'],
-  variable: '--font-nunito-sans',
-  display: 'swap',
-  weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
-});
+import VideoBackground from '@/components/VideoBackground';
 
 export const metadata: Metadata = {
   title: 'Anthrapi - Creating Legacies',
@@ -61,14 +45,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="canonical" href="https://anthrapi.com/" />
-      </head>
-      <body
-        className={`relative ${nunitoSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Background />
-        <div className="relative z-10">{children}</div>
+      <body className="flex min-h-screen flex-col antialiased">
+        <VideoBackground />
+        {children}
       </body>
     </html>
   );

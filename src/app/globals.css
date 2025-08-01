@@ -12,13 +12,6 @@
   --font-serif: 'Berling Nova', serif;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 @font-face {
   font-family: 'HalenoirCompact';
   src: url('/fonts/HalenoirCompact-Regular.otf') format('opentype');

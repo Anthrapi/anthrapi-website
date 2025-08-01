@@ -22,7 +22,7 @@ export default function What() {
         </div>
 
         {/* Middle Section */}
-        <div className="flex flex-1 flex-col gap-8 py-12 lg:flex-row">
+        <div className="relative flex flex-1 flex-col gap-8 py-12 lg:flex-row">
           <div className="relative flex min-h-full w-full flex-col gap-2 overflow-hidden rounded-3xl bg-[#f3f0ee] p-4 pb-32 lg:w-[60%]">
             <h2 className="pb-2 font-serif text-5xl font-medium">
               All-in-One Business Services{' '}
@@ -56,7 +56,7 @@ export default function What() {
               />
             </div>
           </div>
-          <div className="relative min-h-full flex-1 overflow-clip rounded-3xl bg-[#f3f0ee] p-4 pb-24 lg:w-[40%]">
+          <div className="relative min-h-full overflow-clip rounded-3xl bg-[#f3f0ee] p-4 pb-24 lg:w-[40%]">
             <h2 className="pb-2 font-serif text-5xl font-medium">
               AI Workflows
             </h2>
@@ -66,7 +66,7 @@ export default function What() {
               handle support, analysis, scheduling, and more. Save time, cut
               costs, and focus on growing your business.
             </p>
-            <div className="bg-pattern-service absolute right-0 -bottom-36 h-full w-full overflow-clip">
+            <div className="bg-pattern-service absolute right-0 -bottom-36 h-full w-full md:-bottom-54">
               <Image
                 src="/pattern/content-2.png"
                 alt="service"

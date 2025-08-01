@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Who() {
   return (
-    <div className="relative container mx-auto flex min-h-screen items-center justify-center">
+    <div className="relative container mx-auto flex min-h-screen items-center justify-center md:px-4">
       {/* Background gradient and pattern will be handled by existing background components */}
 
       <div className="gap:8 flex min-h-screen w-full flex-col px-4 py-8 md:gap-16 lg:px-0">

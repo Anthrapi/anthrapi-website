@@ -19,18 +19,18 @@ export default function Who() {
         </div>
 
         {/* Middle Section */}
-        <div className="relative flex flex-col items-center justify-between gap-8 py-12 lg:flex-row">
-          <div className="relative inline-flex max-w-fit flex-col gap-4">
+        <div className="relative flex flex-col items-center justify-evenly gap-8 py-12 lg:flex-row">
+          <div className="relative inline-flex max-w-fit flex-col rounded-2xl bg-[#f2f0ee]">
             <Image
               src="/services/Creative Services.png"
               alt="Creative Services"
-              width={400}
-              height={400}
+              width={500}
+              height={500}
               className=""
             />
             <Link
               href="/men-at-work"
-              className="absolute right-2 bottom-2 z-10 flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium hover:bg-amber-50"
+              className="z-10 m-2 ml-auto flex w-fit items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium hover:bg-amber-50"
             >
               Know More
               <Image
@@ -41,17 +41,17 @@ export default function Who() {
               />
             </Link>
           </div>
-          <div className="relative inline-flex max-w-fit flex-col gap-4">
+          <div className="relative inline-flex max-w-fit flex-col rounded-2xl bg-[#f2f0ee]">
             <Image
               src="/services/Software Solutions.png"
               alt="Software Solutions"
-              width={400}
-              height={400}
+              width={500}
+              height={500}
               className=""
             />
             <Link
               href="/men-at-work"
-              className="absolute right-2 bottom-2 z-10 flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium hover:bg-amber-50"
+              className="z-10 m-2 ml-auto flex w-fit items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium hover:bg-amber-50"
             >
               Know More
               <Image
@@ -62,17 +62,17 @@ export default function Who() {
               />
             </Link>
           </div>
-          <div className="relative inline-flex max-w-fit flex-col flex-wrap gap-4">
+          <div className="relative inline-flex max-w-fit flex-col rounded-2xl bg-[#f2f0ee]">
             <Image
               src="/services/AI+.png"
               alt="AI+"
-              width={400}
-              height={400}
+              width={500}
+              height={500}
               className=""
             />
             <Link
               href="/men-at-work"
-              className="absolute right-2 bottom-2 z-10 flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium hover:bg-amber-50"
+              className="z-10 m-2 ml-auto flex w-fit items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium hover:bg-amber-50"
             >
               Know More
               <Image

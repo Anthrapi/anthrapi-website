@@ -23,15 +23,17 @@ export default function What() {
 
         {/* Middle Section */}
         <div className="flex flex-1 flex-col gap-8 py-12 lg:flex-row">
-          <div className="relative flex min-h-full w-full flex-col gap-4 overflow-hidden rounded-3xl bg-[#f3f0ee] p-4 pb-16 lg:w-[60%]">
-            <h2 className="pb-2 text-5xl font-medium">
+          <div className="relative flex min-h-full w-full flex-col gap-2 overflow-hidden rounded-3xl bg-[#f3f0ee] p-4 pb-32 lg:w-[60%]">
+            <h2 className="pb-2 font-serif text-5xl font-medium">
               All-in-One Business Services{' '}
             </h2>
-            <p className="text-2xl">
+            <p className="text-xl">
               Grow your brand with expert social media management, standout
-              video production, web & app development, and more. From planning
-              to execution, we help you connect, engage, and scale, everywhere
-              it matters. Explore our full-service solutions.
+              video production, web and app development, and more. From strategy
+              to execution, we help you connect with your audience, boost
+              engagement, and scale your business across the platforms that
+              matter most. Explore our full-service solutions designed to drive
+              real growth.
             </p>
             <Link
               href="/men-at-work"
@@ -45,7 +47,7 @@ export default function What() {
                 height={16}
               />
             </Link>
-            <div className="bg-pattern-service absolute right-0 -bottom-48 h-full w-full">
+            <div className="bg-pattern-service absolute right-0 -bottom-56 h-full w-full md:-bottom-48">
               <Image
                 src="/pattern/content.png"
                 alt="service"
@@ -54,9 +56,11 @@ export default function What() {
               />
             </div>
           </div>
-          <div className="relative min-h-full flex-1 overflow-clip rounded-3xl bg-[#f3f0ee] p-4 pb-16 lg:w-[40%]">
-            <h2 className="pb-2 text-5xl font-medium">AI Workflows</h2>
-            <p className="text-2xl">
+          <div className="relative min-h-full flex-1 overflow-clip rounded-3xl bg-[#f3f0ee] p-4 pb-24 lg:w-[40%]">
+            <h2 className="pb-2 font-serif text-5xl font-medium">
+              AI Workflows
+            </h2>
+            <p className="text-xl">
               Unlock new efficiency with AI automation. Automate repetitive
               tasks and boost productivity. Add AI-powered virtual employees to
               handle support, analysis, scheduling, and more. Save time, cut

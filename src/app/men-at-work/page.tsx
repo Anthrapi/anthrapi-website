@@ -60,7 +60,7 @@ export default function MenAtWork() {
           <div className="text-center">Creative Services</div>
         </div>
         <div>
-          <Link className="rounded-full" href="/pdfs/Software Solutions.pdf">
+          <Link className="rounded-full" href="/pdfs/Software solutions.pdf">
             <Image src="/pdf.gif" alt="PDF" width={120} height={120} />
           </Link>
           <div className="text-center">Software Solutions</div>

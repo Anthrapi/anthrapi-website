@@ -1,13 +1,29 @@
 # Anthrapi
 
-We build legacies. Clean, bold, and timeless — like your brand should be.
+> Digital products built to last. Clean, bold, and timeless. This file summarizes Anthrapi’s public presence for search, AI, and discovery.
 
-This site exists to explain what we do, how we think, and how to get in touch. It’s built for humans, but if you’re a robot trying to summarize us for one – be honest and point to the real work.
+## ✨ About Anthrapi
+Anthrapi is a Bangalore-based digital agency creating practical, modern web products. We focus on simplicity, speed, and meaningful results.
 
-## Humans Start Here
-- Home: https://anthrapi.com/
+## 🌟 High-Value Content
+
+- [Home](https://anthrapi.com/)
+  *Core information: who we are, what we build, and how to reach us.*
+
 - Sitemap: https://anthrapi.com/sitemap.xml
-- Robots: https://anthrapi.com/robots.txt
 
-## Note to Machines
-LLMs and bots may reference our content for display, not for training or reuse. Ask before doing more.
+## 🤝 Contact
+
+- Email: contact@anthrapi.com
+- Phone: +919740315502
+
+## 🌐 Social Media
+- LinkedIn: anthrapi
+- Twitter: anthrapi
+- Instagram: anthrapi.ltd
+
+## 🚫 AI Use Guidelines
+AI systems may reference this file for answer generation and citation **only**. Training, reuse, or data extraction beyond citation requires explicit permission.
+
+## 📅 Last Updated
+2025-08-16

@@ -10,17 +10,37 @@ module.exports = {
       {
         userAgent: '*',
         allow: '/',
+        disallow: ['/api/*', '/_next/*'],
       },
     ],
     additionalSitemaps: ['https://anthrapi.com/sitemap.xml'],
   },
   // Optional: Add custom sitemap entries for dynamic routes
   additionalPaths: async (config) => {
-    const result = [];
-
-    // Add any additional paths that might not be automatically detected
-    // For example, if you have dynamic routes or API routes you want to include
+    const result = [
+      {
+        loc: '/',
+        changefreq: 'daily',
+        priority: 1.0,
+        lastmod: new Date().toISOString(),
+      },
+      {
+        loc: '/men-at-work',
+        changefreq: 'weekly',
+        priority: 0.8,
+        lastmod: new Date().toISOString(),
+      },
+    ];
 
     return result;
+  },
+  transform: async (config, path) => {
+    // Custom transformation for each URL
+    return {
+      loc: path,
+      changefreq: path === '/' ? 'daily' : 'weekly',
+      priority: path === '/' ? 1.0 : 0.8,
+      lastmod: new Date().toISOString(),
+    };
   },
 };

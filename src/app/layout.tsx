@@ -5,6 +5,22 @@ import VideoBackground from '@/components/VideoBackground';
 export const metadata: Metadata = {
   title: 'Anthrapi - Creating Legacies',
   description: "We don't just create brands; we build legacies",
+  keywords:
+    'branding, creative services, AI services, software solutions, digital agency, marketing, design, development',
+  authors: [{ name: 'Anthrapi Team' }],
+  creator: 'Anthrapi',
+  publisher: 'Anthrapi',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   metadataBase: new URL('https://anthrapi.com'),
   openGraph: {
     title: 'Anthrapi - Creating Legacies',
@@ -36,6 +52,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  verification: {
+    google: '03uN74BReFe9kqhNx6f89dEoOk_7MnpYeQ1_ZL9_-mU',
+  },
 };
 
 export default function RootLayout({
@@ -45,6 +64,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'Anthrapi',
+              url: 'https://anthrapi.com',
+              logo: 'https://anthrapi.com/logo.webp',
+              description: "We don't just create brands; we build legacies",
+              sameAs: ['https://twitter.com/anthrapi'],
+              contactPoint: {
+                '@type': 'ContactPoint',
+                contactType: 'customer service',
+              },
+            }),
+          }}
+        />
+      </head>
       <body className="flex min-h-screen flex-col antialiased">
         <VideoBackground />
         {children}

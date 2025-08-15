@@ -11,40 +11,18 @@ module.exports = {
       {
         userAgent: '*',
         allow: '/',
-        disallow: [
-          '/api/*',
-          '/_next/static/chunks/*.map', // Only block source maps
-          '/_next/static/chunks/webpack-*.js', // Block heavy webpack chunks
-        ],
+        disallow: ['/api/*'],
       },
       {
         userAgent: 'Googlebot',
-        allow: [
-          '/',
-          '/_next/image*', // Allow image optimization routes
-          '/_next/static/chunks/*.js', // Allow JavaScript chunks
-          '/_next/static/css/*.css', // Allow CSS files
-        ],
-        disallow: [
-          '/api/*',
-          '/_next/static/chunks/*.map', // Only block source maps
-          '/_next/static/chunks/webpack-*.js', // Block heavy webpack chunks
-        ],
+        allow: '/',
+        disallow: ['/api/*'],
         crawlDelay: 1, // Allow faster crawling for Google
       },
       {
         userAgent: 'Bingbot',
-        allow: [
-          '/',
-          '/_next/image*', // Allow image optimization routes
-          '/_next/static/chunks/*.js', // Allow JavaScript chunks
-          '/_next/static/css/*.css', // Allow CSS files
-        ],
-        disallow: [
-          '/api/*',
-          '/_next/static/chunks/*.map', // Only block source maps
-          '/_next/static/chunks/webpack-*.js', // Block heavy webpack chunks
-        ],
+        allow: '/',
+        disallow: ['/api/*'],
         crawlDelay: 1,
       },
     ],

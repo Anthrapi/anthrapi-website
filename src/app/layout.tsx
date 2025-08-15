@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 import VideoBackground from '@/components/VideoBackground';
 
@@ -88,6 +90,8 @@ export default function RootLayout({
       <body className="flex min-h-screen flex-col antialiased">
         <VideoBackground />
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
